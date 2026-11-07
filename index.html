@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animalis</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero" aria-labelledby="headline">
+      <header class="hero-header">
+        <img class="logo" src="image/logo_einzeln.gif" alt="Animalis Zoo Logo">
+      </header>
+
+      <div class="content">
+        <!-- Intro Bereich -->
+        <section aria-labelledby="headline" class="intro">
+          <p class="subline">Zoo Animalis · Historie & Erlebnis</p>
+          <h2 id="headline">Eine Zeitreise durch den Zoo Animalis</h2>
+          <p class="lead">
+            Entdecke auf unserer interaktiven Karte, wann welche Tiere in den Zoo gekommen sind, höre dir spannende Podcast und schaue dir unterhaltsame Videos über verschiedene Theman an.
+            Am Ende kannst du dein Wissen über Tiere testen!
+          </p>
+        </section>
+
+        <!-- Historie -->
+        <section class="timeline-section" id="timeline" aria-labelledby="timeline-title">
+          <div class="section-heading">
+            <p class="subline">Historie</p>
+            <h2 id="timeline-title">Die Geschichte von Animalis</h2>
+          </div>
+
+          <!-- Interaktive Karten-Historie -->
+          <div class="historySection" id="historySection">
+            <figure class="history-image-frame">
+              <div class="historyMapContainer historyMapLayer">
+                <img
+                  id="mapPicA"
+                  class="historyMapMainImage"
+                  src="image/zoomaps/zookarte01.png"
+                  alt="Zoo-Karte aus dem Jahr 1998"
+                  data-current-year="1998"
+                >
+                <img
+                  id="mapPicB"
+                  class="mapTop"
+                  src="image/zoomaps/zookarte01.png"
+                  alt=""
+                  aria-hidden="true"
+                >
+              </div>
+
+              <!-- Jahr-Auswahl -->
+              <div class="historyYearButtons" role="tablist" aria-label="Jahresauswahl zur Zoo-Historie">
+                <button class="yBtn is-active" type="button" data-year-button data-year="1998" data-btn="year" aria-pressed="true">1998</button>
+                <button class="yBtn" type="button" data-year-button data-year="2000" data-btn="year" aria-pressed="false">2000</button>
+                <button class="yBtn"
+                        type="button"
+                        data-year-button
+                        data-year="2002"
+                        data-btn="year"
+                        aria-pressed="false">2002</button>
+                <button class="yBtn" type="button" data-year-button data-year="2005" data-btn="year" aria-pressed="false">2005</button>
+                <button class="yBtn" type="button" data-year-button data-year="2008" data-btn="year" aria-pressed="false">2008</button>
+                <button class="yBtn" type="button" data-year-button data-year="2011" data-btn="year" aria-pressed="false">2011</button>
+              </div>
+            </figure>
+
+            <p class="storyTxt" id="storyTxt">
+              <span class="storyYearBig" id="storyYearBig">Das Land wird gekauft</span>
+              <span class="storyMainTxt" id="storyMainTxt">auf dem Animalis in den nächsten Jahren entstehen wird. Es besteht aus Seen mit kleinen Inseln, vielen Wiesen und zahlreichen Bäumen und Pflanzen. Ein Paradies für die zukünftigen Bewohner!</span>
+            </p>
+          </div>
+        </section>
+
+        <!-- Podcast Sektion -->
+        <section class="media-grid" id="media" aria-labelledby="media-title">
+          <div class="section-heading">
+            <p class="subline">Video- und Podcast-Bereich</p>
+            <h2 id="media-title">Podcasts rund um Zoos bieten spannende Hörerlebnisse</h2>
+            <p class="noteTxt">Die Podcasts werden regelmäßig ausgetauscht. Es lohnt sich also regelmäßig vorbei zu schauen!</p>
+          </div>
+
+          <article class="card media-card">
+            <h3>Hinter dem Zoo geht's weiter – Naturschutzpodcast</h3>
+            <iframe
+              style="border-radius:12px;display:block;margin:0;padding:0;"
+              src="https://open.spotify.com/embed/show/7CYvLnUvPKmyvzlodGZZWg"
+              width="100%"
+              height="260"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              title="Hinter dem Zoo geht's weiter Podcast"
+            ></iframe>
+            <p>Podcast der Zoologischen Gesellschaft Frankfurt und des Zoo Frankfurt mit spannenden Einblicken in den Artenschutz.</p>
+          </article>
+
+          <article class="card media-card">
+            <h3>Zoo viel mehr – Der Zoocast</h3>
+            <iframe
+              style="border-radius:12px;display:block;margin:0;padding:0;"
+              src="https://open.spotify.com/embed/show/1FlrYXZSYpTKlPuK94AVbC"
+              width="100%"
+              height="260"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              title="Zoo viel mehr – Der Zoocast"
+            ></iframe>
+            <p>Der Zoocast mit spannenden Einblicken in Artenschutz, Umweltbildung und den Zooalltag.</p>
+          </article>
+        </section>
+
+        <!-- Video Sektion -->
+        <section class="media-grid" id="videos" aria-labelledby="video-title">
+          <div class="section-heading">
+            <h2 id="video-title">Videos aus dem Zooleben - Erlebnisse zum Anfassen</h2>
+            <p class="noteTxt">Die Videos werden ebenfalls regelmäßig getauscht. Es lohnt sich also regelmäßig vorbei zu schauen!</p>
+          </div>
+
+          <article class="card media-card">
+            <h3>Video: Einblick in den Zooalltag</h3>
+            <iframe
+              class="zoo-video-embed"
+              src="https://www.youtube.com/embed/lGMRSs_ST7A"
+              title="Video: Einblick in den Zooalltag"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <p>Ein spannender Videobeitrag mit Eindrücken aus dem Zooalltag und dem Leben der Tiere.</p>
+          </article>
+
+          <article class="card media-card">
+            <h3>Video: Tiere hautnah erleben</h3>
+            <iframe
+              class="zoo-video-embed"
+              src="https://www.youtube.com/embed/My48dggQQlk"
+              title="Video: Tiere hautnah erleben"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <p>Ein weiteres Video mit spannenden Beobachtungen und lebendigen Momenten aus dem Zooleben.</p>
+          </article>
+        </section>
+
+        <!-- quiz -->
+        <section class="media-grid" id="quiz-wissen" aria-labelledby="quiz-title">
+          <div class="section-heading">
+            <p class="subline">Quiz- und Wissensbereich</p>
+            <h2 id="quiz-title">Das spannende Quiz rund um Tiere</h2>
+            <p class="noteTxt">Teste dein Wissen und entdecke spannende Fakten rund um Tiere! Es lohnt sich regelmäßig vorbei zu schauen, da wir uns regelmäßig neue Fragen für euch ausdenken.</p>
+          </div>
+          <article class="quizCard1 card" id="quizWrap1">
+            <p class="quizProgressText" id="quizProgressText">Frage 1 von 10</p>
+            <h3 class="quizQuestionText" id="quizQuestionText"></h3>
+            <form class="quizOptionsList" id="quizOptionsList"></form>
+            <div class="quizNavButtons">
+              <button class="quizBackButton" id="quizBackButton" type="button">Zurück</button>
+              <button class="quizNextButton" id="quizNextButton" type="button" disabled>Weiter</button>
+            </div>
+          </article>
+
+          <!-- Ergebnis Popup -->
+          <div id="resultPop" class="quizResultDialog hideMe" role="dialog" aria-modal="true" aria-labelledby="quizResultTitleText" tabindex="-1">
+            <div class="quizResultDialogContent">
+              <h3 id="quizResultTitleText">Dein Ergebnis</h3>
+              <p id="quizResultBodyText"></p>
+              <button class="quizNextButton" id="restartBtnQ" type="button">Quiz neu starten</button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        © 2026 Zoo Animalis | <a href="index.html">Impressum</a> | Fiktives Uni-Projekt
+      </footer>
+    </section>
+  </main>
+  
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
